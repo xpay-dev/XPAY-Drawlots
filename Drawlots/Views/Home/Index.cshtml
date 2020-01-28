@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.title = "Drawlots";
+}
+
+<div class="bg-banner bg-banner-50">
+    <div class="container">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="padding-100">
+                <center>
+                    <h2 class="font-white">RAFFLE LOTS RUNNING</h2>
+                    <h1 class="font-white">001</h1>
+                </center>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+
+
+        <br />
+    </div>
+</div>
+
+<section id="home-properties">
+    <div class="container padding-50">
+        <div class="row">
+            <p><strong>HOME PROPERTIES</strong></p>
+        </div>        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="box-white">
+                    <a href="@Url.Action("Article1", "Blog")">
+                        <img alt="blog" src="@Url.Content("~/assets/img/blog/img-thumb-blog-1.png")" class="img-responsive center-block">
+                    </a>
+
+                    <div class="container">
+                        <p><h4>@Html.ActionLink("4 BENEFITS OF CASHLESS PAYMENTS", "Article1", "blog", null, new { @class = "header-subtitle" })</h4></p>
+                        <p>We live in a world where there’s constant advancement. Almost everything has become fast and digital – as some would say, this is the “I want it now” age.</p>
+                        <p>@Html.ActionLink("Read More...", "Article1", "Blog", null, new { @class = "header-subtitle-black" })</p>
+                        <br />
+                        <br />
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-3">2</div>
+            <div class="col-md-3">3</div>
+            <div class="col-md-3">4</div>
+        </div>
+    </div>
+</section>
