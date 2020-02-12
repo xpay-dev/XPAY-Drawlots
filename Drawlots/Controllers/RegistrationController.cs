@@ -13,5 +13,12 @@ namespace Drawlots.Controllers
         {
             return View();
         }
+
+        public ActionResult HomeOwner()
+        {
+            return View();
+
+        }
+
     }
 }

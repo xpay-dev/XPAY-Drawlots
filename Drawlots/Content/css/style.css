@@ -13,14 +13,17 @@
 }
 
 .box {
-    background-color: #ffffff;
+    background-color: #fafafa;
     padding: 40px 50px 40px 50px;
     margin: auto;
+    /*height: 300px;*/
 }
 
 .box-2 {
     background-color: #ffffff;
-    padding: 40px 0px 40px 0px;
+    width: 100%;
+    padding: 40px;
+    height: 300px;
     margin: auto;
 }
 
@@ -30,9 +33,42 @@
     /*height: 550px;*/
 }
 
+.box-green {
+    background-color: #029012;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    height: 100px;
+    margin: auto;
+}
+
+.color-blue {
+    color: #0105a0 !important;
+}
+
+.color-red {
+    color: #ff0000;
+}
+
+.color-white {
+    color:#ffffff;
+}
+
+.font-30 {
+    font-size:30px;
+}
+
+.font-60 {
+    font-size: 60px;
+}
+
 .margin-center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.padding-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .padding-20 {
