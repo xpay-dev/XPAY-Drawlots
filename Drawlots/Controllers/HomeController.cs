@@ -13,6 +13,11 @@ namespace Drawlots.Controllers
             return View();
         }
 
+        public ActionResult About()
+        {
+            return View();
+
+        }
 
         public ActionResult Login()
         {
@@ -21,6 +26,12 @@ namespace Drawlots.Controllers
         }
 
         public ActionResult ForgotPassword()
+        {
+            return View();
+
+        }
+
+        public ActionResult RaffleMechanics()
         {
             return View();
 

@@ -1,7 +1,64 @@
 ﻿@{
-    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.title = "About";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+    <div class="container">
+
+
+        <section class="at-property-sec at-property-right-sidebar">
+            <div class="container">
+                <div class="row">
+                    <div class="row animatedParent animateOnce">
+                        <div class="col-xl-7 col-lg-6 col-md-12">
+                            <div class="at-about-col at-col-default-mar">
+                                <div class="at-about-title">
+                                    <h1>About<br> <span>Drawlots</span></h1>
+                                </div>
+                                <p>
+                                    Drawlots, “Where the Home Buyers and Sellers both win”,  is a gamified crowdfunding platform designed to deliver its two main goals: the first is to transform how properties are sold, acquired, owned and traded as an asset or investment; and second, is to enable the people who cannot afford to buy their own homes, who do not have any access to financing, to be able to acquire their dream homes with the help of the platform and its main beneficiary, Habitat for Humanity.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-6 col-md-6">
+                            <div class="at-about-col animated fadeInRightShort slow delay-250">
+                                <img alt="Drawlots" src="@Url.Content("~/Content/img/about/img-about-drawlots.jpg")" class="img-responsive center-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="Grace Granlund" src="@Url.Content("~/Content/img/about/img-grace-granlund.jpg")" class="img-responsive center-block">
+                <br />
+                <br />
+                <br />
+                <h3>Grace Granlund</h3>
+                <p>A hardcore and proud sales professional, with a passion for building networks and long-term relationships with clients in various industries, she has over 25 years of sales experience in Real Estate, Travel, Hospitality, Food and Beverage, Health and Wellness, and more than 15 years of experience as an entrepreneur. She also serves on the Board of trustees of the Cebu Business Club and is current Vice President.</p>
+            </div>
+
+            <div class="col-md-4">
+                <img alt="Grace Granlund" src="@Url.Content("~/Content/img/about/img-grace-granlund.jpg")" class="img-responsive center-block">
+                <br />
+                <br />
+                <br />
+                <h3>Morning Tide</h3>
+                <p>Morningtide Capital Partners brings expertise in financial competency, capital raising through financial modeling, monitoring, valuation, accounting, and strategic financial advisory to SMLEs so that they can achieve optimal growth. MTCP works with clients to identify key drivers in their businesses that stabilize cash flows, increase revenue, and profitability. MTCP’s clients come from a variety of industries, that include, Fintech, Finance/Fund Management, Manufacturing, Retail, E-commerce, Pharmaceuticals, Transportation, Energy, Cosmetics, Construction, Microfinance, and Food & Beverage.</p>
+            </div>
+
+            <div class="col-md-4">
+                <img alt="Xpay" src="@Url.Content("~/Content/img/about/img-xpay.jpg")" class="img-responsive center-block">
+                <br />
+                <br />
+                <br />
+                <h3>Xpay</h3>
+                <p>XPay World Wide Corporation applies its consumer marketing, loyalty and payment experience to deliver a full suite of technology solutions uniquely built for banks, enterprises, multi-tenant corporations and telcos. We deploy bespoke digital transformation and payment solutions for our clients, their partners and consumers. </p>
+                <p>The Drawlots solution is designed to digitize and improve operational and payment processes by seamlessly bundling a number of our platforms to promote the brand and deliver their products and services at every payment, loyalty or social media interaction. </p>
+            </div>
+        </div>
+    </div>

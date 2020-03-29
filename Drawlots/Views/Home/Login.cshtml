@@ -3,27 +3,36 @@
     ViewBag.title = "Login";
 }
 
+<section id="login" class="bg-login">
+    <div class="at-account-sec">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
 
-<div class="container">
-    <div class="padding-100">
-        <form class="form-signin">
-            <div class="box">
-                <center><h3 class="form-signin-heading">User Login</h3></center>
-                <br />
-                <label for="inputEmail" class="sr-only">Email address</label>
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                @*@Html.TextBoxFor(m => m.FirstName, new { @placeholder = "First Name", @class = "form", @required = "required" })*@
-                <br />
-                <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <br />
-                @*<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>*@
-                @Html.ActionLink("Sign in", "Index", "Home", null, new { @class = "btn btn-lg btn-primary btn-block" })
-                <br />
-                <center><p>@Html.ActionLink("Forgot Password", "ForgotPassword", "Home", null, new { @class = "font-black" })</p></center>
-
+                    <div class="box-white">
+                        <center><h2>User Login</h2></center>
+                        <br />
+                        <br />
+                        <form>
+                            <input type="text" class="form-control" placeholder="Username">
+                            <input type="password" class="form-control" placeholder="Password">
+                            @*@Html.TextBoxFor(m => m.FirstName, new { @placeholder = "First Name", @class = "form", @required = "required" })*@
+                            @*<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>*@
+                            <div class="checkbox clearfix">
+                                <label class="pull-left">
+                                    <input type="checkbox"> Remember Me
+                                </label>
+                                <p class="pull-right">
+                                    @Html.ActionLink("Forgot Password", "ForgotPassword", "Home", null, new { @class = "font-black" })
+                                </p>
+                            </div>
+                            <div class="text-center">
+                                @Html.ActionLink("Login", "Login", "Home", null, new { @class = "btn btn-default hvr-bounce-to-right" })
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
-
-</div>
+</section>
