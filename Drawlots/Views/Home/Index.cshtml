@@ -6,32 +6,32 @@
 <section id="banner" class="at-main-slider">
     <div class="flexslider">
         <ul class="slides">
-            <li data-thumb="images/slider/1.jpg">
-                <img alt="logo" src="@Url.Content("~/Content/img/slider/1.jpg")" class="img-responsive center-block">
+            <li data-thumb="@Url.Content("~/Content/img/slider/1.jpg")">
+                <img alt="slider" src="@Url.Content("~/Content/img/slider/1.jpg")" class="img-responsive center-block">
                 <p class="flex-caption">
                     Get your dream home
                 </p>
             </li>
-            <li data-thumb="images/slider/2.jpg">
-                <img alt="logo" src="@Url.Content("~/Content/img/slider/2.jpg")" class="img-responsive center-block">
+            <li data-thumb="@Url.Content("~/Content/img/slider/2.jpg")">
+                <img alt="slider" src="@Url.Content("~/Content/img/slider/2.jpg")" class="img-responsive center-block">
 
             </li>
-            <li data-thumb="images/slider/3.jpg">
-                <img alt="logo" src="@Url.Content("~/Content/img/slider/3.jpg")" class="img-responsive center-block">
+            <li data-thumb="@Url.Content("~/Content/img/slider/3.jpg")">
+                <img alt="slider" src="@Url.Content("~/Content/img/slider/3.jpg")" class="img-responsive center-block">
 
             </li>
-            <li data-thumb="images/slider/4.jpg">
-                <img alt="logo" src="@Url.Content("~/Content/img/slider/4.jpg")" class="img-responsive center-block">
+            <li data-thumb="@Url.Content("~/Content/img/slider/4.jpg")">
+                <img alt="slider" src="@Url.Content("~/Content/img/slider/4.jpg")" class="img-responsive center-block">
             </li>
-            <li data-thumb="images/slider/5.jpg">
-                <img alt="logo" src="@Url.Content("~/Content/img/slider/5.jpg")" class="img-responsive center-block">
+            <li data-thumb="@Url.Content("~/Content/img/slider/5.jpg")">
+                <img alt="slider" src="@Url.Content("~/Content/img/slider/5.jpg")" class="img-responsive center-block">
             </li>
         </ul>
     </div>
 </section>
 
 
-<section id="calltoaction" class="at-over-layer-black">
+<section id="calltoaction" class="at-Call-sec at-over-layer-black">
     <div class="at-Call-both-side clearfix">
         <div class="at-Call-left">
             <div class="at-inside-Call">
@@ -39,9 +39,92 @@
             </div>
         </div>
         <div class="at-Call-right">
-            <div class="at-Call-right-inside white">
-                <h2 class="white">HABITAT FOR HUMANITY</h2>
+            <div class="at-Call-right-inside">
+                <h2>@Html.ActionLink("HABITAT FOR HUMANITY", "RaffleMechanics", "Home", null, new { @class = "white" })</h2>
             </div>
         </div>
     </div>
 </section>
+
+
+
+<section class="at-property-sec">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="at-sec-title at-sec-title-left">
+                    <h2>Awesome <span>Properties</span></h2>
+                    <div class="at-heading-under-line">
+                        <div class="at-heading-inside-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="">
+                    <div class="at-property-img">
+                        <img src="@Url.Content("~/Content/img/property/1.jpg")" alt="">
+                        <div class="at-property-overlayer"></div>
+                        <a class="btn btn-default at-property-btn" href="properties-details-1.html" role="button">View Details</a>
+                        <h4 class="at-bg-black">For Sale</h4>
+                        <h5>PHP 1,900,000.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="at-property-dis">
+                    <ul>
+                        <li><i class="fa fa-object-group" aria-hidden="true"></i> 100 sqm</li>
+                        <li><i class="fa fa-bed" aria-hidden="true"></i> 1</li>
+                        <li><i class="fa fa-bath" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+                <div class="at-property-location">
+                    <h4><i class="fa fa-home" aria-hidden="true"></i><a href="properties-details.html">Mango Grove</a></h4>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Cavite</p>
+                    <br />
+                    @Html.ActionLink("View Details", "Properties", "PropertyDetails", null, new { @class = "btn btn-default hvr-bounce-to-right" })
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-6">
+                <div class="">
+                    <div class="at-property-img">
+                        <img src="@Url.Content("~/Content/img/property/1.jpg")" alt="">
+                        <div class="at-property-overlayer"></div>
+                        <a class="btn btn-default at-property-btn" href="properties-details-1.html" role="button">View Details</a>
+                        <h4 class="at-bg-black">For Sale</h4>
+                        <h5>PHP 1,900,000.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="at-property-dis">
+                    <ul>
+                        <li><i class="fa fa-object-group" aria-hidden="true"></i> 100 sqm</li>
+                        <li><i class="fa fa-bed" aria-hidden="true"></i> 1</li>
+                        <li><i class="fa fa-bath" aria-hidden="true"></i> 1</li>
+                    </ul>
+                </div>
+                <div class="at-property-location">
+                    <h4><i class="fa fa-home" aria-hidden="true"></i><a href="properties-details.html">Mango Grove</a></h4>
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>Cavite</p>
+                    <br />
+                    @Html.ActionLink("View Details", "Properties", "PropertyDetails", null, new { @class = "btn btn-default hvr-bounce-to-right" })
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</section>
+
+

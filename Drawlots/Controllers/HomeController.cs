@@ -31,6 +31,12 @@ namespace Drawlots.Controllers
 
         }
 
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+
+
         public ActionResult RaffleMechanics()
         {
             return View();

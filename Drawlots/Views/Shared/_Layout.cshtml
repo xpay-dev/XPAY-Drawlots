@@ -41,30 +41,6 @@
 
 <body>
 
-    @*<nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Drawlots</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-
-
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-
-                    </ul>
-                </div>
-            </div>
-        </nav>*@
-
-
     <div id="preloader"></div>
 
     <!-- Main Heder Start -->
@@ -82,9 +58,9 @@
                     <div class="col-md-9 col-sm-6 col-6">
                         <div id="main-nav" class="stellarnav">
                             <ul>
-                                <li class="current-menu-item menu-item-has-children"><a href="#">Home</a></li>
+                                <li class="current-menu-item menu-item-has-children">@Html.ActionLink("Home", "Index", "Home", null, new { @class = "font-black" })</li>
                                 <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "font-black" })</li>
-                                <li>@Html.ActionLink("Login", "Login", "Home", null, new { @class = "font-black" })</li>
+                                <li>@Html.ActionLink("Login", "Home", "Home", null, new { @class = "font-black" })</li>
                                 <li>@Html.ActionLink("Register", "Index", "Registration", null, new { @class = "font-black" })</li>
                             </ul>
                         </div>
